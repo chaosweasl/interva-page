@@ -32,6 +32,9 @@ export async function GET() {
 
     return NextResponse.redirect(downloadUrl);
   } catch (err) {
-    return NextResponse.json({ error: "Unexpected error" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Unexpected error " + { err } },
+      { status: 500 }
+    );
   }
 }

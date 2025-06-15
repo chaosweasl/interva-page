@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Download, Github, Shield, Zap } from "lucide-react";
-import Link from "next/link";
 
 export function DownloadCTA() {
   return (

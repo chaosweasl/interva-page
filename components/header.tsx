@@ -4,11 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Github, Download, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 
-export function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+interface HeaderProps {
+  mobileMenuOpen: boolean;
+  setMobileMenuOpen: Dispatch<SetStateAction<boolean>>;
+}
 
+export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-gray-900/80 backdrop-blur-md">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
