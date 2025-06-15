@@ -48,14 +48,6 @@ export const metadata: Metadata = {
       "Boost your productivity with Interva's modern Pomodoro timer. Features 35+ beautiful themes, customizable timers, and a distraction-free interface.",
     type: "website",
     url: "https://interva-chaosweasl.vercel.app/",
-    images: [
-      {
-        url: "/images/interva-main.png",
-        width: 1200,
-        height: 630,
-        alt: "Interva Pomodoro Timer Interface",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
