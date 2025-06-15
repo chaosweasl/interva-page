@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://interva-eight.vercel.app/sitemap.xml
+
+# Allow all web crawlers
+User-agent: *
+Disallow:

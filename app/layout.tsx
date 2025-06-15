@@ -90,6 +90,48 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "Interva",
+              applicationCategory: "ProductivityApplication",
+              operatingSystem: "Windows",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "EUR",
+              },
+              author: {
+                "@type": "Person",
+                name: "chaosweasl",
+                url: "https://github.com/chaosweasl",
+              },
+              description:
+                "A modern, customizable Pomodoro timer application that helps users stay focused and maintain a healthy work-study rhythm with its sleek interface.",
+              softwareVersion: "1.0",
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5",
+                ratingCount: "1",
+              },
+              applicationSuite: "Productivity Tools",
+              featureList: [
+                "Customizable Focus & Break Timers",
+                "35+ Beautiful Themes",
+                "Variety of Sound Effects",
+                "Configurable Settings",
+                "Auto-start next timer",
+                "Volume Control",
+                "Lightweight Desktop App",
+                "Auto Updates",
+              ],
+              downloadUrl: "https://interva-eight.vercel.app/api/download",
+            }),
+          }}
+        />
       </body>
     </html>
   );
