@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     "beautiful themes",
   ],
   authors: [{ name: "chaosweasl" }],
-  metadataBase: new URL("https://interva-eight.vercel.app"),
+  metadataBase: new URL("https://interva-chaosweasl.vercel.app/"),
   alternates: {
-    canonical: "https://interva-eight.vercel.app",
+    canonical: "https://interva-chaosweasl.vercel.app/",
   },
   generator: "Next.js",
   applicationName: "Interva",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     description:
       "Boost your productivity with Interva's modern Pomodoro timer. Features 35+ beautiful themes, customizable timers, and a distraction-free interface.",
     type: "website",
-    url: "https://interva-eight.vercel.app/",
+    url: "https://interva-chaosweasl.vercel.app/",
     images: [
       {
         url: "/images/interva-main.png",
@@ -128,7 +128,7 @@ export default function RootLayout({
                 "Lightweight Desktop App",
                 "Auto Updates",
               ],
-              downloadUrl: "https://interva-eight.vercel.app/api/download",
+              downloadUrl: "https://interva-chaosweasl.vercel.app/api/download",
             }),
           }}
         />
