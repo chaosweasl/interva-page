@@ -28,6 +28,20 @@ export const metadata: Metadata = {
     "beautiful themes",
   ],
   authors: [{ name: "chaosweasl" }],
+  metadataBase: new URL("https://interva-eight.vercel.app"),
+  alternates: {
+    canonical: "https://interva-eight.vercel.app",
+  },
+  generator: "Next.js",
+  applicationName: "Interva",
+  referrer: "origin-when-cross-origin",
+  creator: "chaosweasl",
+  publisher: "chaosweasl",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
     title: "Interva - Beautiful & Customizable Pomodoro Timer",
     description:
@@ -48,6 +62,8 @@ export const metadata: Metadata = {
     title: "Interva - Beautiful & Customizable Pomodoro Timer",
     description:
       "Boost your productivity with Interva's modern Pomodoro timer. Features 35+ beautiful themes, customizable timers, and a distraction-free interface.",
+    creator: "@chaosweasl",
+    site: "@chaosweasl",
     images: ["/images/interva-main.png"],
   },
   robots: {
