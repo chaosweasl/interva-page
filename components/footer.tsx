@@ -48,7 +48,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://github.com/username/interva/releases"
+                  href="https://github.com/chaosweasl/interva/releases"
                   className="hover:text-white transition-colors"
                 >
                   Releases
@@ -56,7 +56,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://github.com/username/interva/issues"
+                  href="https://github.com/chaosweasl/interva/issues"
                   className="hover:text-white transition-colors"
                 >
                   Support
@@ -70,21 +70,14 @@ export function Footer() {
             <h3 className="font-semibold text-white mb-4">Connect</h3>
             <div className="flex space-x-4">
               <Link
-                href="https://github.com/username/interva"
+                href="https://github.com/chaosweasl"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://twitter.com/interva"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="mailto:hello@interva.app"
+                href="mailto:17daniel.dev@gmail.com"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Mail className="h-5 w-5" />
@@ -99,7 +92,7 @@ export function Footer() {
             © {new Date().getFullYear()} interva. Open source and free forever.
           </p>
           <div className="mt-4 sm:mt-0 flex space-x-6 text-sm text-gray-400">
-            <Link
+            {/* <Link
               href="/privacy"
               className="hover:text-white transition-colors"
             >
@@ -107,9 +100,9 @@ export function Footer() {
             </Link>
             <Link href="/terms" className="hover:text-white transition-colors">
               Terms
-            </Link>
+            </Link> */}
             <Link
-              href="https://github.com/username/interva/blob/main/LICENSE"
+              href="https://github.com/chaosweasl/interva/blob/master/LICENSE"
               className="hover:text-white transition-colors"
             >
               License

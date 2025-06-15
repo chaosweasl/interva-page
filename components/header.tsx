@@ -40,7 +40,7 @@ export function Header() {
               Download
             </Link>
             <Link
-              href="https://github.com/username/interva"
+              href="https://github.com/chaosweasl/interva"
               className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
             >
               GitHub
@@ -50,19 +50,30 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <Button
+              asChild
               variant="outline"
               size="sm"
-              className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white"
+              className="border-gray-700 text-gray-800 hover:bg-gray-800 hover:text-white"
             >
-              <Github className="mr-2 h-4 w-4" />
-              Star on GitHub
+              <a
+                href="https://github.com/chaosweasl/interva"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-4 w-4" />
+                Star on GitHub
+              </a>
             </Button>
+
             <Button
+              asChild
               size="sm"
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
             >
-              <Download className="mr-2 h-4 w-4" />
-              Download
+              <a href="/api/download">
+                <Download className="mr-2 h-4 w-4" />
+                Download
+              </a>
             </Button>
           </div>
 
@@ -96,7 +107,7 @@ export function Header() {
                 Download
               </Link>
               <Link
-                href="https://github.com/username/interva"
+                href="https://github.com/chaosweasl/interva"
                 className="text-sm font-medium text-gray-300 hover:text-white"
               >
                 GitHub

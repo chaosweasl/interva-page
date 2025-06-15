@@ -32,19 +32,29 @@ export function Hero() {
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
+              asChild
               size="lg"
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-3 text-lg"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download for Windows
+              <a href="/api/download">
+                <Download className="mr-2 h-5 w-5" />
+                Download for Windows
+              </a>
             </Button>
             <Button
+              asChild
               variant="outline"
               size="lg"
-              className="px-8 py-3 text-lg border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white"
+              className="px-8 py-3 text-lg border-gray-700 text-gray-800 hover:bg-gray-800 hover:text-white"
             >
-              <Github className="mr-2 h-5 w-5" />
-              View on GitHub
+              <a
+                href="https://github.com/chaosweasl/interva"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="mr-2 h-5 w-5" />
+                View on GitHub
+              </a>
             </Button>
           </div>
 
