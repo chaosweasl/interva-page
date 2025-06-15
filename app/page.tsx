@@ -305,7 +305,7 @@ export default function IntervaLanding() {
                     </h3>
                     <p className="text-gray-300">
                       Gentle sound effects and visual cues that alert you when
-                      it's time to take a break or start your next session.
+                      it&apos;s time to take a break or start your next session.
                     </p>
                   </CardContent>
                 </Card>
