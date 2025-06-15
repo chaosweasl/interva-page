@@ -56,7 +56,6 @@ export const metadata: Metadata = {
       "Boost your productivity with Interva's modern Pomodoro timer. Features 35+ beautiful themes, customizable timers, and a distraction-free interface.",
     creator: "@chaosweasl",
     site: "@chaosweasl",
-    images: ["/images/interva-main.png"],
   },
   robots: {
     index: true,
