@@ -51,8 +51,6 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/interva-main.png",
-        width: 1200,
-        height: 630,
         alt: "Interva Pomodoro Timer Interface",
       },
     ],
