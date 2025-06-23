@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Download, Github, Shield, Zap } from "lucide-react";
+import { Download, Github, Shield, Zap, Apple, Monitor } from "lucide-react";
+import { FaWindows, FaApple, FaLinux } from "react-icons/fa";
 
 export function DownloadCTA() {
   return (
@@ -15,17 +16,48 @@ export function DownloadCTA() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            {/* Platform selector */}
+            <div className="flex gap-4 mb-6">
+              <a href="/api/download/windows" title="Download for Windows">
+                <Monitor className="h-8 w-8 text-blue-400 hover:text-blue-500 transition-colors" />
+              </a>
+              <a href="/api/download/macos" title="Download for macOS">
+                <Apple className="h-8 w-8 text-gray-200 hover:text-gray-300 transition-colors" />
+              </a>
+              <a href="/api/download/linux" title="Download for Linux">
+                <FaLinux className="h-8 w-8 text-green-400 hover:text-green-500 transition-colors" />
+              </a>
+            </div>
             <Button
               asChild
               size="lg"
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-4 text-lg"
             >
-              <a href="/api/download">
+              <a href="/api/download/windows">
                 <Download className="mr-2 h-5 w-5" />
                 Download for Windows
               </a>
             </Button>
-
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 text-white px-8 py-4 text-lg"
+            >
+              <a href="/api/download/macos">
+                <Apple className="mr-2 h-5 w-5" />
+                Download for macOS
+              </a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-r from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white px-8 py-4 text-lg"
+            >
+              <a href="/api/download/linux">
+                <FaLinux className="mr-2 h-5 w-5" />
+                Download for Linux
+              </a>
+            </Button>
             <Button
               asChild
               variant="outline"

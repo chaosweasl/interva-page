@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Download, Github, Zap } from "lucide-react";
+import { Download, Github, Zap, Apple, Monitor } from "lucide-react";
+import { FaLinux } from "react-icons/fa";
 import Image from "next/image";
 
 export function Hero() {
@@ -13,7 +14,7 @@ export function Hero() {
             className="mb-6 bg-orange-900/30 text-orange-300 hover:bg-orange-900/30 border-orange-500/50"
           >
             <Zap className="mr-1 h-3 w-3" />
-            Now Available for Windows
+            Now Available for Windows, macOS & Linux
           </Badge>
 
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -31,29 +32,45 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex gap-4 mb-6">
+              <a href="/api/download/windows" title="Download for Windows">
+                <Monitor className="h-8 w-8 text-blue-400 hover:text-blue-500 transition-colors" />
+              </a>
+              <a href="/api/download/macos" title="Download for macOS">
+                <Apple className="h-8 w-8 text-gray-200 hover:text-gray-300 transition-colors" />
+              </a>
+              <a href="/api/download/linux" title="Download for Linux">
+                <FaLinux className="h-8 w-8 text-green-400 hover:text-green-500 transition-colors" />
+              </a>
+            </div>
             <Button
               asChild
               size="lg"
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-3 text-lg"
             >
-              <a href="/api/download">
+              <a href="/api/download/windows">
                 <Download className="mr-2 h-5 w-5" />
                 Download for Windows
               </a>
             </Button>
             <Button
               asChild
-              variant="outline"
               size="lg"
-              className="px-8 py-3 text-lg border-gray-700 text-gray-800 hover:bg-gray-800 hover:text-white"
+              className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 text-white px-8 py-3 text-lg"
             >
-              <a
-                href="https://github.com/chaosweasl/interva"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="mr-2 h-5 w-5" />
-                View on GitHub
+              <a href="/api/download/macos">
+                <Apple className="mr-2 h-5 w-5" />
+                Download for macOS
+              </a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              className="bg-gradient-to-r from-green-600 to-green-800 hover:from-green-700 hover:to-green-900 text-white px-8 py-3 text-lg"
+            >
+              <a href="/api/download/linux">
+                <FaLinux className="mr-2 h-5 w-5" />
+                Download for Linux
               </a>
             </Button>
           </div>
