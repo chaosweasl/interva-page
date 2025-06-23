@@ -53,17 +53,6 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <div className="flex gap-2">
-              <a href="/api/download/windows" title="Download for Windows">
-                <Monitor className="h-6 w-6 text-blue-400 hover:text-blue-500 transition-colors" />
-              </a>
-              <a href="/api/download/macos" title="Download for macOS">
-                <Apple className="h-6 w-6 text-gray-200 hover:text-gray-300 transition-colors" />
-              </a>
-              <a href="/api/download/linux" title="Download for Linux">
-                <FaLinux className="h-6 w-6 text-green-400 hover:text-green-500 transition-colors" />
-              </a>
-            </div>
             <Button
               asChild
               variant="outline"
@@ -85,9 +74,9 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
               size="sm"
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
             >
-              <a href="/api/download/windows">
+              <a href="https://github.com/chaosweasl/interva/releases/latest">
                 <Download className="mr-2 h-4 w-4" />
-                Download
+                Downloads
               </a>
             </Button>
           </div>
