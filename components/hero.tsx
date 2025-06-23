@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Download, Github, Zap, Apple, Monitor } from "lucide-react";
+import { Github, Zap, Apple, Monitor } from "lucide-react";
 import { FaLinux } from "react-icons/fa";
 import Image from "next/image";
 

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, Github, Shield, Zap, Apple, Monitor } from "lucide-react";
-import { FaWindows, FaApple, FaLinux } from "react-icons/fa";
+import { FaLinux } from "react-icons/fa";
 
 export function DownloadCTA() {
   return (

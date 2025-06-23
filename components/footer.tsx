@@ -1,7 +1,6 @@
 import { Github, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaLinux } from "react-icons/fa";
 
 export function Footer() {
   return (
