@@ -3,7 +3,7 @@ import { Timer, Palette, Volume2, Settings, Zap, Shield } from "lucide-react";
 
 export function Features() {
   return (
-    <section id="features" className="py-20 sm:py-32 bg-gray-800/50">
+    <section id="features" className="py-12 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">

@@ -4,16 +4,12 @@ import { FaLinux } from "react-icons/fa";
 
 export function DownloadCTA() {
   return (
-    <section id="download" className="py-20 sm:py-32 bg-gray-900">
+    <section id="download" className="py-12 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Ready to boost your productivity?
           </h2>
-          <p className="mt-4 text-lg text-gray-300">
-            Join thousands of students and professionals who have transformed
-            their study habits with interva.
-          </p>
 
           {/* Platform icons as extra large buttons, no tooltips */}
           <div className="mt-10 flex items-center justify-center gap-16 mb-8">

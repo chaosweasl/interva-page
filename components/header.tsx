@@ -1,11 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Github, Download, Menu, X, Apple, Monitor } from "lucide-react";
-import { FaLinux } from "react-icons/fa";
+import { Github, Download, Menu, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Dispatch, SetStateAction } from "react";
+import type { Dispatch, SetStateAction } from "react";
 
 interface HeaderProps {
   mobileMenuOpen: boolean;
@@ -38,6 +37,12 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
               Features
             </Link>
             <Link
+              href="#installation"
+              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
+            >
+              Installation
+            </Link>
+            <Link
               href="#download"
               className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
             >
@@ -57,7 +62,7 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
               asChild
               variant="outline"
               size="sm"
-              className="border-gray-700 text-gray-800 hover:bg-gray-800 hover:text-white"
+              className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent"
             >
               <a
                 href="https://github.com/chaosweasl/interva"
@@ -74,10 +79,10 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
               size="sm"
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
             >
-              <a href="https://github.com/chaosweasl/interva/releases/latest">
+              <Link href="https://github.com/chaosweasl/interva/releases/latest">
                 <Download className="mr-2 h-4 w-4" />
                 Downloads
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -105,6 +110,12 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
                 Features
               </Link>
               <Link
+                href="#installation"
+                className="text-sm font-medium text-gray-300 hover:text-white"
+              >
+                Installation
+              </Link>
+              <Link
                 href="#download"
                 className="text-sm font-medium text-gray-300 hover:text-white"
               >
@@ -116,32 +127,21 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
               >
                 GitHub
               </Link>
-              <div className="flex flex-row gap-4 py-2 justify-center">
-                <a href="/api/download/windows" title="Download for Windows">
-                  <Monitor className="h-6 w-6 text-blue-400 hover:text-blue-500 transition-colors" />
-                </a>
-                <a href="/api/download/macos" title="Download for macOS">
-                  <Apple className="h-6 w-6 text-gray-200 hover:text-gray-300 transition-colors" />
-                </a>
-                <a href="/api/download/linux" title="Download for Linux">
-                  <FaLinux className="h-6 w-6 text-green-400 hover:text-green-500 transition-colors" />
-                </a>
-              </div>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button
                   variant="outline"
                   size="sm"
-                  className="border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white"
+                  className="cursor-pointer border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent"
                 >
                   <Github className="mr-2 h-4 w-4" />
                   Star on GitHub
                 </Button>
                 <Button
                   size="sm"
-                  className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
+                  className="cursor-pointer bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
                 >
                   <Download className="mr-2 h-4 w-4" />
-                  Download
+                  Downloads
                 </Button>
               </div>
             </nav>
