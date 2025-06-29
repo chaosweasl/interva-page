@@ -229,7 +229,7 @@ export function InstallationGuide() {
                   </div>
                   <code className="text-xs text-gray-300 bg-gray-900 p-2 rounded block break-all">
                     sudo xattr -rd com.apple.quarantine
-                    "/Users/$(whoami)/Downloads/interva_*.dmg"
+                    &quot;/Users/$(whoami)/Downloads/interva_*.dmg&quot;
                   </code>
                 </div>
 
@@ -429,7 +429,7 @@ export function InstallationGuide() {
               <CardHeader>
                 <CardTitle className="text-lg text-white flex items-center gap-2">
                   <Settings className="h-5 w-5 text-blue-400" />
-                  App Won't Start
+                  App Won&apos;t Start
                 </CardTitle>
               </CardHeader>
               <CardContent>
