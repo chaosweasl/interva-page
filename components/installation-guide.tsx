@@ -86,8 +86,8 @@ export function InstallationGuide() {
                         Handle security warnings
                       </p>
                       <p className="text-gray-400 text-sm">
-                        Click "More info" → "Run anyway" if Windows Defender
-                        appears
+                        Click &quot;More info&quot; &rarr; &quot;Run
+                        anyway&quot; if Windows Defender appears
                       </p>
                     </div>
                   </div>
