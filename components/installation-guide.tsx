@@ -18,7 +18,7 @@ import Link from "next/link";
 export function InstallationGuide() {
   return (
     <section id="installation" className="py-12 sm:py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-12 xl:px-24 2xl:px-40 mx-auto">
         <div className="mx-auto max-w-4xl text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Installation Guide
@@ -29,10 +29,10 @@ export function InstallationGuide() {
         </div>
 
         {/* Installation Tabs */}
-        <div className="mx-auto max-w-6xl">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="mx-auto w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Windows Installation */}
-            <Card className="border-gray-700 bg-gray-800/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="border-gray-700 bg-gray-800/50 shadow-lg hover:shadow-xl transition-shadow duration-300 lg:min-w-[340px] xl:min-w-[400px] 2xl:min-w-[460px]">
               <CardHeader className="text-center pb-4">
                 <div className="flex justify-center mb-4">
                   <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-blue-600">
@@ -147,7 +147,7 @@ export function InstallationGuide() {
             </Card>
 
             {/* macOS Installation */}
-            <Card className="border-gray-700 bg-gray-800/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="border-gray-700 bg-gray-800/50 shadow-lg hover:shadow-xl transition-shadow duration-300 lg:min-w-[340px] xl:min-w-[400px] 2xl:min-w-[460px]">
               <CardHeader className="text-center pb-4">
                 <div className="flex justify-center mb-4">
                   <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-br from-gray-400 to-gray-600">
@@ -276,7 +276,7 @@ export function InstallationGuide() {
             </Card>
 
             {/* Linux Installation */}
-            <Card className="border-gray-700 bg-gray-800/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="border-gray-700 bg-gray-800/50 shadow-lg hover:shadow-xl transition-shadow duration-300 lg:min-w-[340px] xl:min-w-[400px] 2xl:min-w-[460px]">
               <CardHeader className="text-center pb-4">
                 <div className="flex justify-center mb-4">
                   <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-green-600">
