@@ -49,6 +49,7 @@ export function Footer() {
               <li>
                 <Link
                   href="https://github.com/chaosweasl/interva/releases"
+                  target="_blank"
                   className="hover:text-white transition-colors"
                 >
                   Releases
@@ -57,6 +58,7 @@ export function Footer() {
               <li>
                 <Link
                   href="https://github.com/chaosweasl/interva/issues"
+                  target="_blank"
                   className="hover:text-white transition-colors"
                 >
                   Support
@@ -71,6 +73,7 @@ export function Footer() {
             <div className="flex space-x-4">
               <Link
                 href="https://github.com/chaosweasl"
+                target="_blank"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Github className="h-5 w-5" />
@@ -103,6 +106,7 @@ export function Footer() {
             </Link> */}
             <Link
               href="https://github.com/chaosweasl/interva/blob/master/LICENSE"
+              target="_blank"
               className="hover:text-white transition-colors"
             >
               License

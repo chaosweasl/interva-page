@@ -50,6 +50,7 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
             </Link>
             <Link
               href="https://github.com/chaosweasl/interva"
+              target="_blank"
               className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
             >
               GitHub
@@ -79,7 +80,10 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
               size="sm"
               className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
             >
-              <Link href="https://github.com/chaosweasl/interva/releases/latest">
+              <Link
+                href="https://github.com/chaosweasl/interva/releases/latest"
+                target="_blank"
+              >
                 <Download className="mr-2 h-4 w-4" />
                 Downloads
               </Link>
@@ -123,6 +127,7 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
               </Link>
               <Link
                 href="https://github.com/chaosweasl/interva"
+                target="_blank"
                 className="text-sm font-medium text-gray-300 hover:text-white"
               >
                 GitHub
@@ -133,15 +138,25 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProps) {
                   size="sm"
                   className="cursor-pointer border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white bg-transparent"
                 >
-                  <Github className="mr-2 h-4 w-4" />
-                  Star on GitHub
+                  <Link
+                    href="https://github.com/chaosweasl/interva"
+                    target="_blank"
+                  >
+                    <Github className="mr-2 h-4 w-4" />
+                    Star on GitHub
+                  </Link>
                 </Button>
                 <Button
                   size="sm"
                   className="cursor-pointer bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600"
                 >
-                  <Download className="mr-2 h-4 w-4" />
-                  Downloads
+                  <Link
+                    href="https://github.com/chaosweasl/interva/releases/latest"
+                    target="_blank"
+                  >
+                    <Download className="mr-2 h-4 w-4" />
+                    Downloads
+                  </Link>
                 </Button>
               </div>
             </nav>
